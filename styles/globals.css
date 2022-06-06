@@ -1,0 +1,167 @@
+html,
+body {
+  background: #E5E5E5;
+  /* background-image: url("../public/WithoutShipBG(1).gif");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: 'Luckiest Guy' !important;
+} */
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justifyContent-center {
+  justify-content: center;
+}
+
+.text-dark-green {
+  color: #3B6253 !important;
+}
+
+.s-section {
+  padding-top: 100px;
+}
+
+.s-contents {
+  width: 87.5vw;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3.section-title {
+  text-align: center;
+  color: #282C3C;
+  font-size: 54px;
+  font-weight: normal;
+  line-height: 100px;
+  -webkit-text-stroke: 3px white;
+  margin-bottom: 100px;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-footerText {
+  color: #fff;
+  font-family: 'Red Hat Display' !important;
+  margin-top: 100px !important;
+}
+
+.MuiBackdrop-root {
+  background: rgba(255, 255, 255, 0.26) !important;
+  backdrop-filter: blur(69px) !important;
+}
+
+/* @media screen and (min-width: 1200px) {
+  .MuiContainer-root {
+    max-width: 1441px !important;
+    padding: 0px !important;
+  }
+} */
+
+.loading-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #26282fcc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* pointer-events: none; */
+}
+
+@media screen and (max-width: 899.98px) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .s-section {
+    padding-top: 50px;
+  }
+
+  h3.section-title {
+    font-size: 32px;
+    line-height: 60px;
+    margin-bottom: 50px;
+    -webkit-text-stroke: 2px white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3.section-title {
+    letter-spacing: 1px;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    -webkit-text-stroke: unset;
+  }
+
+  .about-collapse .MuiAccordionSummary-root {
+    padding: 20px !important;
+    justify-content: flex-end;
+  }
+
+  .about-collapse .MuiAccordionSummary-content {
+    width: calc(100% - 50px);
+    flex: none;
+  }
+
+  .about-collapse .MuiAccordionSummary-content .MuiTypography-root {
+    font-size: 14px;
+  }
+
+  .about-collapse .MuiAccordionDetails-root {
+    padding: 0 20px 20px;
+  }
+
+  .about-collapse .MuiAccordionDetails-root .MuiTypography-root {
+    font-size: 14px;
+  }
+
+  .about-collapse .MuiAccordionSummary-expandIconWrapper {
+    right: 20px;
+  }
+
+  .c-footerText {
+    margin-top: 50px !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}
