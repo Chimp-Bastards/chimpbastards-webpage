@@ -524,13 +524,13 @@ const Home = (props: HomeProps) => {
                       <Button style={{ color: 'white', fontFamily: 'AMSTERDAM', fontSize: '34px' }}>GEN 0</Button>
                     </Box>
                   </Box>
-                  <Box>
+                  {/* <Box>
                     {!wallet.connected ? (
                       <ConnectButton>Connect Wallet</ConnectButton>
                     ) : (
                       <></>
                     )}
-                  </Box>
+                  </Box> */}
                 </Box>
               </Container>
             </>
@@ -538,7 +538,7 @@ const Home = (props: HomeProps) => {
         }
       </Box >
 
-      {
+      {/* {
         matches ? (
           <>
             <Box style={{ textAlign: 'center' }}>
@@ -552,7 +552,7 @@ const Home = (props: HomeProps) => {
         ) : (
           <></>
         )
-      }
+      } */}
 
       <Box>
         <img src={"sidebar.png"} style={{ display: 'block', width: '100%' }} />

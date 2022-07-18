@@ -63,9 +63,9 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <ConnectionProvider endpoint={endpoint}>
+      {/* <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
-          <WalletDialogProvider>
+          <WalletDialogProvider> */}
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
@@ -73,9 +73,9 @@ const App = () => {
               rpcHost={rpcHost}
               network={network}
             />
-          </WalletDialogProvider>
+          {/* </WalletDialogProvider>
         </WalletProvider>
-      </ConnectionProvider>
+      </ConnectionProvider> */}
     </ThemeProvider>
   );
 };
