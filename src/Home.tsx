@@ -570,7 +570,9 @@ const Home = (props: HomeProps) => {
                 <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '72px' }}>CHIMP Bastards</Typography>
               </Box>
               <Box>
-                <Typography style={{ color: 'white', fontSize: '16px' }}>Before we launch our main collection, we will be putting out a Gen 0 collection first. The Gen 0 mint will consist of 555 Troop Passes. All of which will be packed with utilities. Among the utilities will include but will not be limited to the following:</Typography>
+                <Typography style={{ color: 'white', fontSize: '16px' }}>Chimp Bastards is a brand, an investment pass, a family and an academy all in one. 5000 Bastard NFTs to start the building blocks of an ecosystem which aims provide immense value to it community via the Bastard Academy, Chimpvestments, weekly server events and high quality alphas. Utility and opportunity are its core tenets.
+                </Typography>
+                <Typography style={{ paddingTop: '20px', color: 'white', fontSize: '16px' }}>Be with us. Chimp with us. Release the Bastard within you!</Typography>
               </Box>
             </Grid>
 
