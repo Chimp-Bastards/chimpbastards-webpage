@@ -509,7 +509,7 @@ const Home = (props: HomeProps) => {
                       <img src={"head_logo.png"} />
                     </Box>
                     <Box style={{ padding: '12px 12px', }}>
-                      <Button style={{ color: 'white', fontFamily: 'AMSTERDAM', fontSize: '34px' }}>HOME</Button>
+                      <Button style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: '34px' }}>HOME</Button>
                     </Box>
                     <Box style={{ padding: '12px 12px', }}>
                       <Button style={{ color: 'white', fontFamily: 'AMSTERDAM', fontSize: '34px' }}>MINTING</Button>
@@ -521,7 +521,7 @@ const Home = (props: HomeProps) => {
                       <Button style={{ color: 'white', fontFamily: 'AMSTERDAM', fontSize: '34px' }} onClick={() => window.open("https://chimp-marketplace.herokuapp.com/", "_blank")}>MARKETPLACE</Button>
                     </Box>
                     <Box style={{ padding: '12px 12px', }}>
-                      <Button style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: '34px' }}>GEN 0</Button>
+                      <Button style={{ color: 'white', fontFamily: 'AMSTERDAM', fontSize: '34px' }}>GEN 0</Button>
                     </Box>
                   </Box>
                   <Box>
@@ -555,22 +555,89 @@ const Home = (props: HomeProps) => {
       }
 
       <Box>
-        <img src={"sidebar.png"} style={{ display: 'block' }}/>
+        <img src={"sidebar.png"} style={{ display: 'block', width: '100%' }} />
       </Box>
       <Box>
-        <img src={"intro_bar.png"} style={{ display: 'block' }}/>
+        <img src={"intro_bar.png"} style={{ display: 'block', width: '100%' }} />
+      </Box>
+
+      <Box style={{
+        backgroundImage: 'url("galary_bar.png")',
+        backgroundRepeat: 'no - repeat',
+        backgroundSize: 'cover',
+        paddingBottom: '30px'
+      }}>
+        {/* <img src={'galary_bar.png'} style={{ display: 'block' }} /> */}
+        <Container>
+          <Box style={{ textAlign: 'center' }}>
+            <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '90px' }}>CHIMP GALLERY</Typography>
+          </Box>
+
+          <Grid container spacing={2}>
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/1.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/2.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/3.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/4.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container spacing={2}>
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/5.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/6.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/7.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+
+            <Grid item xs={6} sm={3}>
+              <Box sx={{ p: 2 }} style={{ textAlign: 'center' }}>
+                <img src={"nfts/8.png"} style={{ width: '90%' }} />
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box >
+
+      <Box style={{ position: 'relative' }}>
+        <img src={"roadmap_bar.png"} style={{ width: '100%', display: 'block' }} />
+        <Box style={{ position: 'absolute', textAlign: 'center', top: 0, left: '42%', display: matches ? 'none' : 'block' }}>
+          <Box>
+            <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '90px' }}>ROADMAP</Typography>
+          </Box>
+        </Box>
       </Box>
 
       <Box>
-        <img src={'galary_bar.png'} style={{ display: 'block' }}/>
-      </Box>
-
-      <Box>
-        <img src={"roadmap_bar.png"} style={{ display: 'block' }}/>
-      </Box>
-
-      <Box>
-        <img src={"client_bar.png"} style={{ display: 'block' }}/>
+        <img src={"client_bar.png"} style={{ display: 'block', width: '100%' }} />
       </Box>
 
       <Box style={{ background: '#181720', padding: '10px 0px', textAlign: matches ? 'center' : 'left' }}>
