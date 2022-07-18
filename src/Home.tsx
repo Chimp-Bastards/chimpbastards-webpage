@@ -557,8 +557,27 @@ const Home = (props: HomeProps) => {
       <Box>
         <img src={"sidebar.png"} style={{ display: 'block', width: '100%' }} />
       </Box>
-      <Box>
-        <img src={"intro_bar.png"} style={{ display: 'block', width: '100%' }} />
+      <Box style={{
+        backgroundImage: 'url("intro_bar.png")',
+        backgroundRepeat: 'no - repeat',
+        backgroundSize: 'cover',
+        paddingBottom: '30px'
+      }}>
+        <Container>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <Box>
+                <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '72px' }}>CHIMP Bastards</Typography>
+              </Box>
+              <Box>
+                <Typography style={{ color: 'white', fontSize: '16px' }}>Before we launch our main collection, we will be putting out a Gen 0 collection first. The Gen 0 mint will consist of 555 Troop Passes. All of which will be packed with utilities. Among the utilities will include but will not be limited to the following:</Typography>
+              </Box>
+            </Grid>
+
+            <Grid item xs={12} sm={6}>
+            </Grid>
+          </Grid>
+        </Container>
       </Box>
 
       <Box style={{
