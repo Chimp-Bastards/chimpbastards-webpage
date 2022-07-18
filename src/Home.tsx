@@ -567,12 +567,12 @@ const Home = (props: HomeProps) => {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <Box>
-                <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '72px' }}>CHIMP Bastards</Typography>
+                <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '72px', textAlign: matches ? 'center' : 'left' }}>CHIMP Bastards</Typography>
               </Box>
               <Box>
-                <Typography style={{ color: 'white', fontSize: '16px' }}>Chimp Bastards is a brand, an investment pass, a family and an academy all in one. 5000 Bastard NFTs to start the building blocks of an ecosystem which aims provide immense value to it community via the Bastard Academy, Chimpvestments, weekly server events and high quality alphas. Utility and opportunity are its core tenets.
+                <Typography style={{ color: 'white', fontSize: '16px', textAlign: matches ? 'center' : 'left' }}>Chimp Bastards is a brand, an investment pass, a family and an academy all in one. 5000 Bastard NFTs to start the building blocks of an ecosystem which aims provide immense value to it community via the Bastard Academy, Chimpvestments, weekly server events and high quality alphas. Utility and opportunity are its core tenets.
                 </Typography>
-                <Typography style={{ paddingTop: '20px', color: 'white', fontSize: '16px' }}>Be with us. Chimp with us. Release the Bastard within you!</Typography>
+                <Typography style={{ paddingTop: '20px', color: 'white', fontSize: '16px', textAlign: matches ? 'center' : 'left' }}>Be with us. Chimp with us. Release the Bastard within you!</Typography>
               </Box>
             </Grid>
 
@@ -649,8 +649,8 @@ const Home = (props: HomeProps) => {
       </Box >
 
       <Box style={{ position: 'relative' }}>
-        <img src={"roadmap_bar.png"} style={{ width: '100%', display: 'block' }} />
-        <Box style={{ position: 'absolute', textAlign: 'center', top: 0, left: '42%', display: matches ? 'none' : 'block' }}>
+        <img src={matches ? "roadmap_bar_mobile.png" : "roadmap_bar.png"} style={{ width: '100%', display: 'block' }} />
+        <Box style={{ position: 'absolute', textAlign: 'center', top: 0, left: matches ? '33%' : '42%' }}>
           <Box>
             <Typography style={{ color: '#ffba00', fontFamily: 'AMSTERDAM', fontSize: matches ? '48px' : '90px' }}>ROADMAP</Typography>
           </Box>
